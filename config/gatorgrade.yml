@@ -1,0 +1,104 @@
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the writing/reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the writing/reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+- tutorials/tutorial_01/src/fibonacci.py:
+  - description: Ensure that fibonacci.py file exists in the tutorials/tutorial_01/src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the tutorials/tutorial_01/src/fibonacci.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the tutorials/tutorial_01/src/fibonacci.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+
+- tutorials/tutorial_01/src/test_fibonacci.py:
+  - description: Ensure that test_fibonacci.py file exists in the tutorials/tutorial_01/src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the tutorials/tutorial_01/src/test_fibonacci.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the tutorials/tutorial_01/src/test_fibonacci.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+- tutorials/tutorial_02/src/sequence_tools.py:
+  - description: Ensure that sequence_tools.py file exists in the tutorials/tutorial_02/src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the tutorials/tutorial_02/src/sequence_tools.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the tutorials/tutorial_02/src/sequence_tools.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+- tutorials/tutorial_03/src/analysis_pipeline.py:
+  - description: Ensure that analysis_pipeline.py file exists in the tutorials/tutorial_03/src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the tutorials/tutorial_03/src/analysis_pipeline.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the tutorials/tutorial_03/src/analysis_pipeline.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+- tutorials/tutorial_03/src/analysis_pipeline.py:
+  - description: Ensure that test_analysis_pipeline.py file exists in the tutorials/tutorial_03/src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the tutorials/tutorial_03/src/test_analysis_pipeline.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the tutorials/tutorial_03/src/test_analysis_pipeline.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+
+
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
